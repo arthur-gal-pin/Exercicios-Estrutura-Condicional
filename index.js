@@ -1,4 +1,4 @@
-const num = parseInt(prompt("Insira um número:"));
+const num = parseFloat(prompt("Insira um número:"));
 
 if (isNaN(num)) {
     alert('Erro: Você não digitou um número válido!')
