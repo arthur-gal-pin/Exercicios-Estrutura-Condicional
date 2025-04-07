@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="maioridade"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 01:25:31 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTjRNVEI3NzQ7MjAyNS0wNC0wNzsiMTI6NDI6MzUgIjsyNjM1"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTjRNVEI3NzQ7MjAyNS0wNC0wNzsiMDE6MjU6MzEgIjs0OzI3NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="preco" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o pre&#231;o da compra:&quot;" newline="True"/>
+            <input variable="preco"/>
+            <if expression="preco &gt;= 100">
+                <then>
+                    <output expression="&quot;Voc&#234; recebeu um desconto de &quot; &amp; preco/10 &amp; &quot; reais!&quot;" newline="True"/>
+                    <output expression="&quot;Sua compra ir&#225; custar &quot; &amp; preco*0.9 &amp; &quot; reais.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua compra ir&#225; custar &quot; &amp; preco &amp; &quot; reais.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
